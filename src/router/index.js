@@ -69,5 +69,8 @@ export default new Router({
       component: rankDetail
     }
   ],
-  mode: 'history'
+  mode: 'history',
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  }
 })
